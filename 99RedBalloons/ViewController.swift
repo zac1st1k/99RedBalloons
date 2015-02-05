@@ -31,8 +31,8 @@ class ViewController: UIViewController {
 
     @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
         label.hidden = false
-        imageView.image = redBalloons[currentIndex].image
-        label.text = "\(currentIndex + 1) red ballon is \"\(redBalloons[currentIndex].number)\""
+        imageView.image = redBalloons[currentIndex % redBalloons.count].image
+        label.text = "\(currentIndex % redBalloons.count + 1) red ballon is \"balloon \(redBalloons[currentIndex % redBalloons.count].number)\"."
         currentIndex++
     }
 }

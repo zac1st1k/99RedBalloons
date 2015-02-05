@@ -11,10 +11,10 @@ import UIKit
 
 class Factory {
     class func create99Balloons() -> [Balloon] {
-        var Ballon1 = Balloon(number: "Ballon 1", image: UIImage(named: "RedBalloon1.jpg")!)
-        var Ballon2 = Balloon(number: "Ballon 2", image: UIImage(named: "RedBalloon2.jpg")!)
-        var Ballon3 = Balloon(number: "Ballon 3", image: UIImage(named: "RedBalloon3.jpg")!)
-        var Ballon4 = Balloon(number: "Ballon 4", image: UIImage(named: "RedBalloon4.jpg")!)
+        var Ballon1 = Balloon(number: 1, image: UIImage(named: "RedBalloon1.jpg")!)
+        var Ballon2 = Balloon(number: 2, image: UIImage(named: "RedBalloon2.jpg")!)
+        var Ballon3 = Balloon(number: 3, image: UIImage(named: "RedBalloon3.jpg")!)
+        var Ballon4 = Balloon(number: 4, image: UIImage(named: "RedBalloon4.jpg")!)
         var redBallons:[Balloon] = []
         var caseNumber:Int
         var currentNumber:Int = -1
